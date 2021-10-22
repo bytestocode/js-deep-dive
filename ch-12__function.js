@@ -1,3 +1,23 @@
+// 12.4.3 함수 생성 시점과 함수 호이스팅
+// 예제 12-12
+// 함수 참조
+console.dir(add); // [Function: add]
+console.dir(sub); // undefined
+
+// 함수 호출
+console.log(add(5, 2));
+console.log(sub(2, 5));
+
+// 함수 선언문
+function add(x, y) {
+  return x + y;
+}
+
+// 함수 표현식 (권장)
+var sub = function (x, y) {
+  return x - y;
+};
+
 // 즉시 실행 함수
 res = (function () {
   const a = 3;
