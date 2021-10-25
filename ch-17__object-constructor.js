@@ -31,4 +31,3 @@ const circle2 = new Circle(10);
 
 console.log(circle1.getDiameter());
 console.log(circle2.getDiameter());
- 
