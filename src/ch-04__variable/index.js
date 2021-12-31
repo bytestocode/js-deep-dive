@@ -2,6 +2,8 @@ let 변수;
 
 console.log(변수); // undefined
 
+// const 변수 = "초기화";
+
 console.log(score); // undefined
 
 var score = 100;
