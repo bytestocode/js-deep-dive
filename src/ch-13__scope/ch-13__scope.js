@@ -10,7 +10,7 @@ foo(); //local
 
 console.log(x); //global
 
-// 그림 13-2 
+// 그림 13-2
 // 상위 스코프에서 유요한 변수는 하위 스코프에서 자유롭게 참조할 수 있지만
 // 하위 스코프에서 유효한 변수를 상위 스코프에서 참조할 수 없다
 var x = "global x";
@@ -38,6 +38,21 @@ outer();
 
 console.log(x); // global x
 // console.log(z); // ReferenceError: z is not defined
+
+// 13.3.2 스코프 체인에 의한 함수 검색
+// 예제 13-06
+function foo() {
+  console.log("global function foo");
+}
+
+function bar() {
+  function foo() {
+    console.log("local function foo");
+  }
+  foo();
+}
+
+bar(); // local function foo
 
 // 13.4 함수 레벨 스코프
 // 예제 13-7
