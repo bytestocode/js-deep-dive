@@ -1,4 +1,5 @@
 // 14.1.1 지역 변수의 생명 주기
+// 예제 14-02
 var x = "global";
 
 function foo() {
@@ -21,7 +22,7 @@ var Counter = (function () {
       return --num;
     },
   };
-}());
+})();
 
 console.log(Counter.num); // undefined
 console.log(Counter.increase()); // 1
